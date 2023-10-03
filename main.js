@@ -3,6 +3,7 @@ import Lenis from '@studio-freight/lenis';
 import Swiper from 'swiper';
 import 'swiper/css';
 import MyResume from './resume/Marc_Trojanowski_Resume.pdf';
+import scrollToTop from './JS/scroll-to-top';
 
 // Swiper
 var swiper = new Swiper(".mySwiper", {
@@ -37,3 +38,6 @@ requestAnimationFrame(raf)
 // update resume url
 const $resume = document.querySelector('.resume');
 $resume.href = MyResume;
+
+// Scroll to top
+scrollToTop();
