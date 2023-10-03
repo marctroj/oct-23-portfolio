@@ -4,6 +4,10 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import MyResume from './resume/Marc_Trojanowski_Resume.pdf';
 import scrollToTop from './JS/scroll-to-top';
+import Rellax from 'rellax';
+
+// Rellax
+var rellax = new Rellax('.rellax');
 
 // Swiper
 var swiper = new Swiper(".mySwiper", {

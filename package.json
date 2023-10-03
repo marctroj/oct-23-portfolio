@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.25",
+    "rellax": "^1.12.1",
     "sass": "^1.68.0",
     "swiper": "^10.3.1"
   }
