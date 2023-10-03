@@ -1,0 +1,34 @@
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	// .hero__about
+	&__about {
+		padding-top: 56px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		flex: 80%;
+
+		@media screen and (max-width: 767px) {
+			flex: 100%;
+		}
+	}
+	// .hero__about-text
+	&__about-text {
+		color: $white-1;
+		font-family: $bely-regular;
+		font-size: calc(22px + 24 * (100vw - 320px) / 1600);
+	}
+
+	// .hero__empty
+	&__empty {
+		flex: 20%;
+
+		@media screen and (max-width: 767px) {
+			flex: 0;
+		}
+	}
+}

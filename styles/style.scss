@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "bely-regular";
+  src: url(../fonts/Bely\ Display\ W00\ Regular.ttf);
+}
+
+@font-face {
+  font-family: "AzoSans-Light";
+  src: url(../fonts/AzoSans-Light.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #141414;
+  background-image: linear-gradient(#45484a 0.5px, transparent 0.5px), linear-gradient(90deg, #45484a 0.5px, transparent 0.5px);
+  background-size: 25% 20%;
+}
+
+@media screen and (max-width: 767px) {
+
+  body {
+    background-size: 50% 10%;
+  }
+}
+
+// .container
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.66667rem;
+  max-width: 1440px;
+}
+
+@import './vars';
+@import './hero';
+@import './header';
+@import './projects';
+@import './marquee';
+@import './personal-projects';
+@import './footer';
+
+.ratio {
+  position: relative;
+  display: block;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/8.5;
+    background: black;
+  }
+}
+
+.ratio-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
