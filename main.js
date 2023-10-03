@@ -2,6 +2,7 @@ import './styles/style.scss'
 import Lenis from '@studio-freight/lenis';
 import Swiper from 'swiper';
 import 'swiper/css';
+import MyResume from './resume/Marc_Trojanowski_Resume.pdf';
 
 // Swiper
 var swiper = new Swiper(".mySwiper", {
@@ -32,3 +33,8 @@ function raf(time) {
 };
 
 requestAnimationFrame(raf)
+
+// update resume url
+const $resume = document.querySelector('.resume');
+if (!$resume) return;
+$resume.href = MyResume;
