@@ -36,5 +36,4 @@ requestAnimationFrame(raf)
 
 // update resume url
 const $resume = document.querySelector('.resume');
-if (!$resume) return;
 $resume.href = MyResume;
