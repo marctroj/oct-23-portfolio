@@ -4,11 +4,11 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 function heroAnimation() {
   gsap.registerPlugin(ScrollTrigger);
 
-  const $headerName = document.querySelector('.header__name');
-  const $heroText = document.querySelector('.hero__about-text');
+  // const $headerName = document.querySelector('.header__name');
+  // const $heroText = document.querySelector('.hero__about-text');
 
-  gsap.to($headerName, { duration: 0.8, y:"0"});
-  gsap.from($heroText, { duration: 0.8, y:"50px", opacity: 0});
+  // gsap.to($headerName, { duration: 0.8, y:"0"});
+  // gsap.from($heroText, { duration: 0.8, y:"50px", opacity: 0});
 
   // gsap.to('.projects__text', {
   //   scrollTrigger: {

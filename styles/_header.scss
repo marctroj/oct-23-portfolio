@@ -15,15 +15,9 @@
 	z-index: 4;
 	width: 100%;
 
-	// .header__name-mask
-	&__name-mask {
-		overflow: hidden;
-	}
-
 	// .header__name
 	&__name {
 		z-index: 3;
-		transform: translateY(100%);
 	}
 
 	// .header__nav
