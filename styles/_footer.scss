@@ -18,6 +18,7 @@
 		font-family: $azoSans-light;
 		list-style: none;
 		font-size: calc(14px + 16*(100vw - 320px)/1600);
+		overflow: hidden;
 	}
 
 	// .footer__list-link
@@ -25,7 +26,9 @@
 		text-decoration: none;
 		color: $white-1;
 		transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+		transform: translateY(100%);
 
+		// .footer__list-link:hover
 		&:hover {
 			color: $orange-1;
 			letter-spacing: 3px;
@@ -65,6 +68,7 @@
 		cursor: pointer;
 		transition: stroke 300ms ease;
 
+		// .footer__arrow:hover
 		&:hover {
 			stroke: $orange-1;
 		}

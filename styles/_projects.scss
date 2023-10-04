@@ -2,14 +2,23 @@
 	margin-top: 15%;
 	margin-bottom: 15%;
 
+	// .projects__title-mask
+	&__title-mask {
+		overflow: hidden;
+	}
+
 	// .projects__title
 	&__title {
 		font-size: calc(34px + 106*(100vw - 320px)/1600);
 		color: $gray-2;
-		margin-bottom: 75px;
+		padding-bottom: 75px;
 		-webkit-text-stroke-color: $gray-1;
 		-webkit-text-stroke-width: 0.8px;
 		-webkit-text-fill-color: #141414;
+
+		@media screen and (min-width: 2022px) {
+			font-size: calc(28px + 85*(100vw - 320px)/1600);
+		}
 
 		@media screen and (max-width: 767px) {
 			font-size: calc(32px + 106*(100vw - 320px)/1600);
