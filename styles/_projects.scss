@@ -2,9 +2,8 @@
 	margin-top: 15%;
 	margin-bottom: 15%;
 
-	// .projects__title-mask
-	&__title-mask {
-		overflow: hidden;
+	@media screen and (max-width: 767px) {
+		margin-bottom: 20%;
 	}
 
 	// .projects__title
@@ -24,7 +23,7 @@
 			font-size: calc(32px + 106*(100vw - 320px)/1600);
 			-webkit-text-stroke-color: initial;
 			-webkit-text-fill-color: initial;
-			margin-bottom: 50px;
+			padding-bottom: 50px;
 			color: $gray-1;
 		}
 	}
