@@ -5,26 +5,10 @@ import MyResume from './resume/Marc_Trojanowski_Resume.pdf';
 import scrollToTop from './JS/scroll-to-top';
 import navMenu from './JS/nav-menu';
 import Rellax from 'rellax';
-import Lenis from '@studio-freight/lenis'
 import heroAnimation from './JS/hero-animations';
 
 // Rellax
 var rellax = new Rellax('.rellax');
-
-// Lenis Scroll
-const lenis = new Lenis()
-
-lenis.on('scroll', (e) => {
-  // console.log(e)
-})
-
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
-
-requestAnimationFrame(raf)
-
 
 // Swiper
 var swiper = new Swiper(".mySwiper", {

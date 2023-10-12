@@ -7,7 +7,8 @@
 	}
 
 	// .projects__title
-	&__title {
+	&__title,
+	&__title-two {
 		font-size: calc(34px + 106*(100vw - 320px)/1600);
 		color: $gray-2;
 		padding-bottom: 75px;
