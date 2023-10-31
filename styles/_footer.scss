@@ -44,11 +44,12 @@
 		height: 250px;
 		left: 15%;
 		stroke: $gray-2;
-		transition: scale 500ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+		transition: all 500ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
 		// .footer__arrow-svg:hover
 		&:hover {
-			scale: 1.2;
+			scale: 1.1;
+			stroke: $orange-1;
 		}
 
 		@media screen and (max-width: 767px) {
